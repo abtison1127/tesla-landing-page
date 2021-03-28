@@ -9,14 +9,14 @@ const Item = ({ title, desc, backgroundImg, leftBtnTxt, leftBtnLink, rightBtnTxt
             backgroundImage: `url(${backgroundImg})`
         }}>
             <div className='item__container'>
-                <div className='item__text'>
+                <div className='items__text'>
                     <p>{title}</p>
-                    <div className='item__textDesc'>
+                    <div className='item__textDescription'>
                         <p>{desc}</p>
                     </div>
                 </div>
                 <div className='item__lowerThird'>
-                    <div className='item__buttons'>
+                    <div className='items__buttons'>
                         <Button imp='primary' text={leftBtnTxt} link={leftBtnLink} />
                         {twoButtons && (
                             <Button imp='secondary' text={rightBtnTxt} link={rightBtnLink} />
@@ -35,3 +35,5 @@ const Item = ({ title, desc, backgroundImg, leftBtnTxt, leftBtnLink, rightBtnTxt
 }
 
 export default Item
+
+

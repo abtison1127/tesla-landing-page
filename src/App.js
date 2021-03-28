@@ -1,13 +1,15 @@
 import './App.css';
 import Header from './components/Header';
 import Item from './components/Item.js';
+import FirstItem from './components/FirstItem.js';
+
 
 import Accessories from './assets/Desktop-Accessories.jpg'
-import ModelS from './assets/Desktop-ModelS.jpeg'
-import Model3 from './assets/Desktop-Model3.jpeg'
-import ModelX from './assets/Desktop-ModelX.jpeg'
-import ModelY from './assets/Desktop-ModelY.jpeg'
-import SolarPanels from './assets/Desktop-SolarPanels.jpeg'
+import MusicParty from './assets/musicParty.png'
+import ExpenseTracker from './assets/expenseTracker.jpg'
+import Pathfinder from './assets/pathfinder.jpg'
+import Tesla from './assets/tesla.jpg'
+import topPage from './assets/topPage.jpg'
 import SolarRoof from './assets/Desktop-SolarRoof.jpeg'
 
 function App() {
@@ -15,63 +17,55 @@ function App() {
     <div className="App">
       <Header/>
         <div className="app__itemsContainer">
-          <Item
-            title='Lowest Cost Solar Panels in America'
-            desc='Money-back guarantee'
+          <FirstItem
+            title='REACT DEVELOPER'
+            desc='A passionate software engineer excited about learning new technologies and deploying ever-improving applications. Experience in Object-oriented programming and Front-end Development.'
             descLink=''
-            backgroundImg={SolarPanels}
-            leftBtnTxt='ORDER NOW'
-            leftBtnLink=''
-            rightBtnTxt='LEARN MORE'
-            rightBtnLink=''
-            twoButtons='true'
-            first
+            backgroundImg={topPage}
           />
           <Item
-            title='Model S'
-            desc='$69,420'
+            title='Music Party'
+            desc='A full-stack web app that lets users listen and control music with each other simultaneously with Spotify API.'
             descLink=''
-            backgroundImg={ModelS}
-            leftBtnTxt='CUSTOM ORDER'
-            leftBtnLink=''
+            backgroundImg={MusicParty}
+            leftBtnTxt='SOURCE CODE'
+            leftBtnLink='https://github.com/abtison1127/music-party-with-spotify'
             rightBtnTxt='LEARN MORE'
             rightBtnLink=''
-            twoButtons='true'
           />
           <Item
-            title='Model 3'
-            desc='Money-back guarantee'
+            title=''
+            desc=''
             descLink=''
-            backgroundImg={Model3}
-            leftBtnTxt='CUSTOM ORDER'
-            leftBtnLink=''
-            rightBtnTxt='LEARN MORE'
-            rightBtnLink=''
+            backgroundImg={ExpenseTracker}
+            leftBtnTxt='LIVE'
+            leftBtnLink='https://salary-expense-tracker.netlify.app/'
+            rightBtnTxt='SOURCE CODE'
+            rightBtnLink='https://github.com/abtison1127/Expense-Tracker-w-Speechly'
             twoButtons='true'
           />
           <Item
-            title='Model X'
-            desc='Money-back guarantee'
+            title='A-Star Pathfinding Visualizer'
+            desc='A program that visualizes the A-Star Algorithm using Pygame in Python3 as it runs.'
             descLink=''
-            backgroundImg={ModelX}
-            leftBtnTxt='CUSTOM ORDER'
+            backgroundImg={Pathfinder}
+            leftBtnTxt='SOURCE CODE'
             leftBtnLink=''
             rightBtnTxt='LEARN MORE'
             rightBtnLink=''
-            twoButtons='true'
           />
            <Item
-            title='Model Y'
-            desc='Money-back guarantee'
+            title='Tesla Clone'
+            desc='Tesla landing page with ReactJS'
             descLink=''
-            backgroundImg={ModelY}
-            leftBtnTxt='CUSTOM ORDER'
-            leftBtnLink=''
-            rightBtnTxt='LEARN MORE'
-            rightBtnLink=''
+            backgroundImg={Tesla}
+            leftBtnTxt='LIVE'
+            leftBtnLink='https://tesla-landing-page-clone.netlify.app/'
+            rightBtnTxt='SOURCE CODE'
+            rightBtnLink='https://github.com/abtison1127/tesla-landing-page'
             twoButtons='true'
           />
-           <Item
+           {/* <Item
             title='Solar for New Roofs'
             desc='Money-back guarantee'
             descLink=''
@@ -91,7 +85,7 @@ function App() {
             leftBtnLink=''
             rightBtnTxt='LEARN MORE'
             rightBtnLink=''
-          />
+          /> */}
         </div>
     </div>
   );
